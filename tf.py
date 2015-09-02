@@ -4,17 +4,20 @@ import csv
 import math
 import collections
 
-sfile=open("NVshop.csv","r")
+
+
+
+sfile=open("exshop.csv","r")
 sdata=csv.reader(sfile)
 slist=[]
 sdata.next()
 for line in sdata:
-	slist.append(line[1])
+	slist.append(line[0])
 print len(slist)
 
 
 for shop in slist:
-	ifile=open("NVshop"+shop+".csv","r")
+	ifile=open("NVshop/"+shop+".csv","r")
 	idata=csv.reader(ifile)
 	outfile=open("NVshoptf/"+shop+".csv","wb")
 	writer=csv.writer(outfile)
