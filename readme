@@ -1,0 +1,18 @@
+入力ファイル
+NVshop.csv
+
+hoge.csv
+rev_id,bus_id,text
+aaaa,bbbb,i was ~~
+bbbb,cccc,hoge goe~~~
+
+の形であらわされるレビューの集合。
+この集合について各単語の出現回数及び総単語数を出力する
+
+入力ファイルを探すときに
+NVshop.csv
+bbbbbb
+ccccc
+ffffff
+
+の形の対象ファイル一覧を指定する。
